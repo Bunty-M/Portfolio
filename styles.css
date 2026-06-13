@@ -504,13 +504,28 @@ section {
   font-size: 0.68rem;
   letter-spacing: 0.15em;
   color: var(--gold);
-  margin-bottom: 0.5rem;
-  opacity: 0.8;
+  margin-bottom: 0.4rem;
+  opacity: 0.9;
 }
 .exp-co {
-  font-size: 0.8rem;
-  color: var(--muted);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.01em;
   margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.exp-co::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--gold);
+  box-shadow: 0 0 8px var(--gold);
+  flex-shrink: 0;
 }
 .exp-role {
   font-size: 1.65rem;
@@ -602,6 +617,52 @@ section {
 }
 .view-letter-btn svg {
   flex-shrink: 0;
+}
+
+/* ── Yellow.ai / company tag & highlight chips ── */
+.exp-company-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.58rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold);
+  background: rgba(240, 165, 0, 0.07);
+  border: 1px solid rgba(240, 165, 0, 0.2);
+  padding: 0.25rem 0.65rem;
+  border-radius: 20px;
+  margin-top: 0.4rem;
+}
+
+.exp-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.4rem;
+}
+
+.exp-highlight-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--teal);
+  background: rgba(0, 212, 170, 0.06);
+  border: 1px solid rgba(0, 212, 170, 0.2);
+  padding: 0.3rem 0.75rem;
+  border-radius: 4px;
+  transition: all 0.25s;
+}
+
+.exp-highlight-chip:hover {
+  background: rgba(0, 212, 170, 0.12);
+  border-color: var(--teal);
+  box-shadow: 0 0 10px rgba(0, 212, 170, 0.1);
 }
 
 /* PROJECTS */
