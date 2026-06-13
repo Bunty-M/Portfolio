@@ -1,4 +1,4 @@
-// Custom cursor
+
 const cursor = document.getElementById("cursor");
 const ring = document.getElementById("cursorRing");
 let mx = 0,
@@ -36,7 +36,6 @@ document
       ring.style.height = "36px";
     });
   });
-
 // Scroll reveal
 const io = new IntersectionObserver(
   (entries) => {
