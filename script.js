@@ -1,4 +1,5 @@
-
+// your code goes here
+// Custom cursor
 const cursor = document.getElementById("cursor");
 const ring = document.getElementById("cursorRing");
 let mx = 0,
